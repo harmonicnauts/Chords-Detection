@@ -5,6 +5,8 @@ from sklearn.preprocessing import LabelEncoder
 def load_model(model_name):
     return pickle.load(open(model_name, 'rb'))
 
+
+# Not yet finished
 def predict_chord(files, model):
     # For loop through test files
     for file in files:

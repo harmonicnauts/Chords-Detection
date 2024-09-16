@@ -34,7 +34,7 @@ pygame.display.set_caption("Chord Detection")
 
 model = load_model("model.h5")
 label_encoder = LabelEncoder()
-label_encoder.classes_ = np.load('classes.npy')
+label_encoder.classes_ = np.load('classes_1.npy', allow_pickle=True)
 
 # Main loop
 running = True
